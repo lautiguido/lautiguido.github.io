@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    background-image: url("/descarga\ \(3\).jpg")
+}
+
+.post-list{
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 15px
+}
+
+.content{
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-gap: 20px;
+max-width: 1000px;
+margin: auto;
+}
+
+.post-img-1{
+background: url(post.jpeg);
+width: 100%;
+height: 200px;
+background-size: cover;
+background-position: center;
+transition: .2s;
+}
+
+.post-img-2{
+    background: url(post2.jpeg);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    transition: .2s;
+    }
+
+    .post-img-3{
+        background: url(post3.jpeg);
+        width: 100%;
+        height: 200px;
+        background-size: cover;
+        background-position: center;
+        transition: .2s;
+        }
+        .post{
+            box-shadow: 0 1px 6px 1px (0, 0, 0, 1);
+            /*overflow: hiddern; */
+            transition: .2s;
+        }
+
+        .post:hover{
+            transform: translate(-4px);
+            box-shadow: 0 1px 6px 1px (0, 0, 0, .15); 
+
+        }
+
+        .post-header{
+            width: 100%;
+            height: 200px;
+             /*overflow: hiddern; */
+             cursor: pointer;
+        }
+        .post:hover .post-img-1,
+        .post:hover .post-img-2,
+        .post:hover .post-img-3{
+            transform: scale(1.1);
+        }
+        .post-body{
+            padding: 15px;
+            text-align: center;
+        }
+
+        .post-body span{
+            display: inline-block;
+            color: #999;
+            margin-bottom: 10px;
+        }
+
+        .post-body h2{
+            margin-bottom: 15px;
+        }
+
+        .post-body p{
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        .post-body .post-link{
+            display: block;
+            text-decoration: none;
+            padding: 10px;
+            background: #2b6ebb;
+            color: #fff;
+            width: 50%;
+            margin: auto;
+            border-radius: 20px;
+            box-shadow: 1px 2px 6px 1px rgba(0, 0, 0, .1);
+        }
+
+        .post-body .post-link:hover{
+            background: #3378c7;
+            box-shadow: 1px 2px 6px 1px rgba(0, 0, 0, .2);
+            transform: translateY(-2px);
+        }
+
+        
+    
